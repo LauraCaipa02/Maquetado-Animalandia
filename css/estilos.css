@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+	--dark-color:#191919;
+	--white-color:#FFFFFF;
+	--purple-color:rgb(117,41,149);
+	--blue-color:#00B2B1;
+    --bluelight-color:rgba(0,178,209,0.47);
+	--gray-color:#828282;
+	--ligh-color:#F3F3F3;
+    --purplelight-color:rgba(117, 41, 149, 0.45);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+
+
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--purple-color);
+}
+
+p{
+    color:var(--dark-color);
+    justify-content: center;
+    text-align: justify;
+}
+
+/*Estilos Home*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+.bazul{
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-style: solid;
+}
+
+.bazul:hover{
+    color: var(--blue-color);
+    background-color: var(--white-color);
+    transition: all 1s ease 1ms;
+}
+
+.bmorado{
+    background-color: var(--white-color);
+    color: var(--purple-color);
+    border-radius: 5px;
+    border-color: var(--purple-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-style: solid;
+}
+
+.bmorado:hover{
+    color: var(--white-color);
+    background-color: var(--purple-color);
+    transition: all 1s ease 1ms;
+}
+
+/*Estilos Barra Navegación*/
+
+nav{
+    display: flex;
+    background-color: var(--purple-color);
+}
+
+.item{
+    padding: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--purple-color);
+}
+
+.item:hover{
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid var(--ligh-color);
+}
+
+.icono{
+    margin-right: 0.5rem;
+}
+
+/* Estilos agenda*/
+
+#agenda{
+    display: flex;
+    margin-top: 00.1rem;
+
+}
+
+.cita{
+    flex-basis: 70%;
+    background-image: url(../img/fondo.jpg);
+    padding: 2rem;
+}
+
+.cita h1{
+    color: var(--dark-color);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.cita h3{
+    color: var(--dark-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.promocion{
+    flex-basis: 30%; /*define el ancho que van a tener los elementos*/
+    background-color: var(--purple-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.promocion h1{
+    color: var(--white-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.promocion img{
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+}
+
+/* Estilos servicios*/
+.tseccion{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+} 
+
+#servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio{
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+.servicio img{
+    max-width: 200px;
+    width: 100%;
+
+}
+/* Estilos footer */
+footer{
+    background-image: url(../img/fondo.jpg);
+
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+    background-color:rgba(117,41,149,0.45);
+}
+
+.foot{
+    text-align: center;
+}
+.foot h3, .foot p{
+    color: var(--white-color);
+}
+/*Estilos equipo */
+#banner img{
+    width: 100%;
+}
+
+#medicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.medico{
+    margin: 15px;
+    text-align: center;
+    padding: 1rem;
+    margin: 10px;
+
+}
+
+.medico img{
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+    inset: 0 0 0 1px var(--white-color);
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.medico h2{
+    margin:0;
+}
+.medico h3{
+    color: var(--dark-color);
+    margin: 0;
+}
+.medico p{
+    text-align: center;
+    margin: 0;
+}
+
+/*Estilos Servicios*/
+
+#sservicios{
+    display:flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.sservicio {
+    display: flex;
+    margin: 0 15px;
+    align-items: center;
+    flex-basis: 45%;
+
+}
+
+.sservicio img{
+    width: 200px;
+    margin: 10px;
+}
+
+.sservicio h2{
+    color: var(--dark-color);
+    font-size: 24px;
+}
+
+/*Estilos Contacto*/
+
+#contacto {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mapa iframe{
+    border: 1px solid var(--purplelight-color);
+    box-shadow: 1px 1px 4px var(--purplelight-color);
+    border-radius: 5%;
+    width: 380px;
+    height: 320px;
+    margin: 25px;
+
+}
+
+.info-contacto{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.info-contacto h1{
+    font-size: 35px;
+    width: 50%;
+    margin: 10px 0px 50px 0;
+    font-weight: bolder;
+}
+
+.info-contacto p{
+    text-align: left ;
+    font-size: 20px;
+}
+.info-contacto i {
+    color: var(--purple-color);
+}
+
+.form{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#fcont{
+    background-color:var(--purplelight-color);
+    box-shadow: 1px 1px 2px var(--purple-color);
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%px;
+    border-radius: 28px;
+    padding: 10px 48px;
+    justify-content: center;
+}
+
+#fcont h2{
+    padding: 0%;
+    text-align: center;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cajam input{
+    height: 70px;;
+}
+label{
+    color: var(--purple-color);
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.espacio{
+    display: flex;
+    margin: 20px auto;
+}
+
+#benviar{
+    width: 105px;
+    margin: 0px auto;
+    background-color: var(--purple-color);
+    border-radius: 5px;
+    color: var(--white-color);
+}
+
+/*Estilos tips*/
+#tipss{
+    background-image: url(../img/Frame\ 2\ \(1\).svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tips{
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.tipuno{
+    background-color: var(--purplelight-color);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 90px auto;
+    border-radius: 24px;
+    padding: ;
+}
+
+.tipdos{
+    background-color: var(--bluelight-color);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    border-radius: 24px;
+}
+
+.tipuno img, .tipdos img{
+    width: 200px;
+    border-radius: 50%;
+
+}
