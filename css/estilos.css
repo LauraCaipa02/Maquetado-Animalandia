@@ -354,39 +354,63 @@ label{
     background-image: url(../img/Frame\ 2\ \(1\).svg);
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .tips{
-
-
     display: flex;
     flex-direction: column;
 }
 
 .tipuno{
     background-color: var(--purplelight-color);
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 90px auto;
+    margin: 90px auto 20px;
     border-radius: 24px;
-    padding: ;
+    padding: 15px;
+}
+
+.titulotip{
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--dark-color);
+    font-weight: bolder;
+}
+
+.tipuno img {
+    width: 200px;
+    border-radius: 50%;
+    margin: 0px 15px 15px 0;
+}
+
+.tipuno p{
+    padding: 10px;
+    font-size: 18px;
 }
 
 .tipdos{
     background-color: var(--bluelight-color);
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px auto;
+    margin: 20px auto 90px;
     border-radius: 24px;
+    padding: 10px;
 }
 
-.tipuno img, .tipdos img{
+.tipdos img{
     width: 200px;
     border-radius: 50%;
+    margin: 20px;
 
+}
+
+.tipdos p{
+    padding: 0px 15px;
+    font-size: 18px;
+}
+.tipdos h2{
+    font-size: 40px;
+    padding: 0%;
 }
